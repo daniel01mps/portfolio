@@ -6,7 +6,7 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: "Nunito Sans", sans-serif;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 #principal{
     width: 1120px;
@@ -16,7 +16,7 @@
     & #foto{
         width: 150px;
         height: 150px;
-        background-color: rebeccapurple;
+        background-color: RED;
         border-radius: 50%;
     }
     & main{
@@ -25,6 +25,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 44px;
             & div{
                 & h1{
                     font-size: 36px;
@@ -32,12 +33,64 @@
                 & h6{
                     font-size: 20px;
                 }
-                
+                & nav{
+                    margin-top: 16px;
+                    & a{
+                        display: block;
+                        color: rgb(58, 25, 129);
+                        padding-bottom: 6px;
+                        position: relative;
+                        transition-duration: 200ms;
+                        &:hover{
+                            color: red;
+                            &::after{
+                                width: 16px;
+                                left:calc(50% - 8px);
+                                opacity: 1;
+                            }
+                        }
+                        &::after{
+                        content: "";
+                        width: 0;
+                        height: 4px;
+                        border-radius: 2px;
+                        background-color: red;
+                        position: absolute;
+                        top: 100%;
+                        left: 50%;
+                        opacity: 0;
+                        transition-duration: 200ms;
+                        }
+                    }
+                }
             }
 
             & ul{
                 display: flex;
                 gap: 16px;
+            }
+        }
+        & #sobre{
+            & h2{
+                font-size: 48px;
+                margin-bottom: 26px;
+            }
+            & p{
+                width: 700px;
+                font-size: 18px;
+                margin-bottom: 16px;
+            }
+        }
+        & #linguagens{
+            margin-top: 100px;
+            & ul{
+                display: flex;
+                gap: 16px;
+            }
+            & li{
+                flex: 1;
+                height: 100px;
+                background-color: red;
             }
         }
     }
