@@ -6,7 +6,8 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: "Nunito Sans", sans-serif;
-    /* border: 1px solid red; */
+    background-color: rgb(4, 63, 77);
+    border: 1px solid red;
 }
 #principal{
     width: 1120px;
@@ -14,10 +15,11 @@
     display: flex;
     gap: 28px;
     & #foto{
+        display: flex;
         width: 150px;
         height: 150px;
-        background-color: RED;
-        border-radius: 50%;
+        /* background-color: RED;
+        border-radius: 50%; */
     }
     & main{
         flex: 1;
@@ -26,6 +28,7 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 44px;
+            color: rgb(229, 229, 229);
             & div{
                 & h1{
                     font-size: 36px;
@@ -37,12 +40,12 @@
                     margin-top: 16px;
                     & a{
                         display: block;
-                        color: rgb(58, 25, 129);
+                        color: rgb(255, 255, 255);
                         padding-bottom: 6px;
                         position: relative;
                         transition-duration: 200ms;
                         &:hover{
-                            color: red;
+                            color: rgb(255, 255, 255);
                             &::after{
                                 width: 16px;
                                 left:calc(50% - 8px);
@@ -54,7 +57,7 @@
                         width: 0;
                         height: 4px;
                         border-radius: 2px;
-                        background-color: red;
+                        background-color: rgb(255, 255, 255);
                         position: absolute;
                         top: 100%;
                         left: 50%;
@@ -74,11 +77,13 @@
             & h2{
                 font-size: 48px;
                 margin-bottom: 26px;
+                color:rgb(255, 255, 255);
             }
             & p{
                 width: 700px;
                 font-size: 18px;
                 margin-bottom: 16px;
+                color:rgb(255, 255, 255);
             }
         }
         & #linguagens{
@@ -88,10 +93,12 @@
                 gap: 16px;
             }
             & li{
+                display:flex;
                 flex: 1;
                 height: 100px;
-                background-color: red;
+                /* background-color: rgb(26, 8, 8); */
             }
         }
+    
     }
 }
