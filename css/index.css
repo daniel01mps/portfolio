@@ -7,7 +7,7 @@
     box-sizing: border-box;
     font-family: "Nunito Sans", sans-serif;
     background-color: rgb(4, 63, 77);
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 #principal{
     width: 1120px;
